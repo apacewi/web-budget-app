@@ -1,0 +1,255 @@
+body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/green_dust_scratch.png");
+	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+#container
+{
+	width: 1200px;
+	height: 720px;
+	color: white;
+	margin-left: auto;
+	margin-right:auto;
+}
+h2
+{
+	position: relative;
+	margin: 5px;
+
+	font-family: 'Architects Daughter', cursive;
+	
+}
+#title
+{
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+	width: 998px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	border-bottom: 2px dotted #888888;
+	text-align: center;
+	border-left: 2px dotted #888888;
+	border-right: 2px dotted #888888;
+	border-top: 2px dotted #888888;
+	
+}
+.bigtitle
+{
+	position: relative;
+	top: -18px;
+}
+#usermenu
+{
+	float: right;
+}
+.accountmanager
+{
+	float: top;
+	width: 100px;
+	height: 25px;
+	color: #0000FF;
+	text-align: center;
+	font-family: 'Asap Condensed', sans-serif;
+	font-weight: 500;
+}
+.accountmanager:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#menu
+{
+	width: 1200px;
+	height: 40px;	
+}
+#inmainmenu
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 42px;
+	border-left: 2px dotted #888888;
+	border-right: 2px dotted #888888;
+
+}
+.minimenu
+{
+	float: left;
+	background-color: #666666;
+	text-align: center;
+	color: #EEEDDD;
+	font-size: 20px;
+	border-right: 2px dotted #888888;
+	width: 228px;
+	padding: 10px;
+
+}
+#minimenuended
+{
+	float: left;
+	background-color: #666666;
+	text-align: center;
+	color: #EEEDDD;
+	font-size: 20px;
+	width: 230px;
+	padding: 10px;
+
+}
+.minimenu:hover
+{
+	background-color: #444444;
+	cursor: pointer;
+}
+#minimenuended:hover
+{
+	background-color: #444444;
+	cursor: pointer;
+}
+#description
+{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 970px;
+	text-align: justify;
+	font-size: 20px;
+	color: white;
+	padding: 15px;
+	border-left: 2px dotted #888888;
+	border-right: 2px dotted #888888;
+	border-bottom: 2px dotted #888888;
+	border-top: 2px dotted #888888;
+}
+#startpage
+{
+	width: 1000px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-left: 2px dotted #888888;
+	border-right: 2px dotted #888888;
+	border-bottom: 2px dotted #888888;
+}
+#foto
+{
+	position: relative;
+	top: 20px;
+	left: 50px;
+	float: left;
+	width: 420px;
+	height: 300px;
+	border: 2px dotted #888888;
+}
+#foto2
+{
+	position: relative;
+	top: 20px;
+	left: 100px;
+	float: left;
+	width: 420px;
+	height: 300px;
+	border: 2px dotted #888888;
+}
+#footer
+{
+	width: 970px;
+	height: 20px;
+	background-color: #999999;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 15px;
+	border-left: 2px dotted #888888;
+	border-right: 2px dotted #888888;
+}
+#logincontainer
+{
+	background-color: #CCCCCC;
+	width: 300px;
+	padding:60px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	-webkit-box-shadow: 5px 5px 47px -1px rgba(0,0,0,0.69);
+	-moz-box-shadow: 5px 5px 47px -1px rgba(0,0,0,0.69);
+	box-shadow: 5px 5px 47px -1px rgba(0,0,0,0.69);
+
+}
+input[type=text],
+input[type=address],
+input[type=name],
+input[type=password]
+{
+	width: 276px;
+	padding: 15px 10px;
+	outline: none;
+	font-size: 20px;
+	background-color: #efefef;
+	margin-top: 20px;
+	border: 2px solid #BBBBBB;
+	border-radius: 5px;
+	color: grey;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #CCCCCC;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #CCCCCC;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #CCCCCC;
+}
+input[type=submit]
+{
+	width: 300px;
+	border: 2px solid #BBBBBB;
+	background-color: #99CCCC;
+	font-size: 20px;
+	color: grey;
+	padding: 15px 10px;
+	margin-top: 40px;
+	border-radius: 5px;
+}
+input[type=submit]:hover
+{
+	cursor: pointer;
+	background-color: #339999;
+	color: white;
+	
+}
+#gotoregister
+{
+	margin-top: 20px;
+	background-color: #CCCCCC;
+	font-size: 15px;
+	color: blue;
+}
+#gotoregister:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#backtomainmenu
+{
+	width: 260px;
+	font-size: 20px;
+	text-align: right;
+	color: white;
+}
+#backtomainmenu:hover
+{
+	color: blue;
+	cursor: pointer;
+}
+.icon-left-big
+{
+	float:left;
+}
