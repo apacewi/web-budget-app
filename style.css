@@ -3,7 +3,12 @@ body
 	/* Background pattern from Toptal Subtle Patterns */
 	background-image: url("img/green_dust_scratch.png");
 	font-family: 'Roboto Condensed', sans-serif;
-	
+	overflow: hidden;
+	text-shadow:
+	1px 1px 0 #333333,
+	-1px 1px 0 #999999,
+	-1px -1px 0 #999999,
+	1px -1px 0 #999999;
 }
 #container
 {
@@ -17,7 +22,6 @@ h2
 {
 	position: relative;
 	margin: 5px;
-
 	font-family: 'Architects Daughter', cursive;
 	
 }
@@ -26,15 +30,11 @@ h2
 	font-family: 'Architects Daughter', cursive;
 	font-size: 20px;
 	width: 998px;
-	height: 80px;
+	height: 60px;
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
-	border-bottom: 2px dotted #888888;
 	text-align: center;
-	border-left: 2px dotted #888888;
-	border-right: 2px dotted #888888;
-	border-top: 2px dotted #888888;
 	
 }
 .bigtitle
@@ -55,6 +55,7 @@ h2
 	text-align: center;
 	font-family: 'Asap Condensed', sans-serif;
 	font-weight: 500;
+	text-shadow: none;
 }
 .accountmanager:hover
 {
@@ -72,8 +73,6 @@ h2
 	margin-right: auto;
 	width: 1000px;
 	height: 42px;
-	border-left: 2px dotted #888888;
-	border-right: 2px dotted #888888;
 
 }
 .minimenu
@@ -83,7 +82,7 @@ h2
 	text-align: center;
 	color: #EEEDDD;
 	font-size: 20px;
-	border-right: 2px dotted #888888;
+	border-right: 2px solid #888888;
 	width: 228px;
 	padding: 10px;
 
@@ -119,10 +118,6 @@ h2
 	font-size: 20px;
 	color: white;
 	padding: 15px;
-	border-left: 2px dotted #888888;
-	border-right: 2px dotted #888888;
-	border-bottom: 2px dotted #888888;
-	border-top: 2px dotted #888888;
 }
 #startpage
 {
@@ -131,32 +126,67 @@ h2
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	border-left: 2px dotted #888888;
-	border-right: 2px dotted #888888;
-	border-bottom: 2px dotted #888888;
 }
+#money
+{
+	float: left;
+	font-size: 25px;
+	position: relative;
+	left: 250px;
+	font-family: 'Architects Daughter', cursive;
+	font-weight: 900;
+	
+}
+#muchmoney
+{
+	float:left;
+	font-size: 25px;
+	position: relative;
+	left: 650px;
+	font-family: 'Architects Daughter', cursive;
+	font-weight: 900;
+}
+
 #foto
 {
+	clear: both;
+	float: left;
 	position: relative;
-	top: 20px;
+	top: 0px;
 	left: 50px;
 	float: left;
 	width: 420px;
 	height: 300px;
-	border: 2px dotted #888888;
+}
+#rightbold
+{
+	position: relative;
+	left: -200px;
+	top: 80px;
+	font-size: 150px;
+	z-index: 1;
+	opacity: 70%;
+	color: white;
+	text-shadow:
+	2px 2px 0 #99CC00,
+	-2px 2px 0 #99CC00,
+	-2px -2px 0 #99CC00,
+	2px -2px 0 #99CC00;
 }
 #foto2
 {
 	position: relative;
-	top: 20px;
-	left: 100px;
+	top: -145px;
+	left: 120px;
 	float: left;
 	width: 420px;
 	height: 300px;
-	border: 2px dotted #888888;
 }
 #footer
 {
+	clear: both;
+	position: relative;
+	top: -110px;
 	width: 970px;
 	height: 20px;
 	background-color: #999999;
@@ -164,8 +194,6 @@ h2
 	margin-right: auto;
 	text-align: center;
 	padding: 15px;
-	border-left: 2px dotted #888888;
-	border-right: 2px dotted #888888;
 }
 #logincontainer
 {
