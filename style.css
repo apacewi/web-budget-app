@@ -3,12 +3,15 @@ body
 	/* Background pattern from Toptal Subtle Patterns */
 	background-image: url("img/green_dust_scratch.png");
 	font-family: 'Roboto Condensed', sans-serif;
-	overflow: hidden;
 	text-shadow:
 	1px 1px 0 #333333,
 	-1px 1px 0 #999999,
 	-1px -1px 0 #999999,
 	1px -1px 0 #999999;
+}
+.newline
+{
+	clear:both;
 }
 #container
 {
@@ -24,6 +27,21 @@ h2
 	margin: 5px;
 	font-family: 'Architects Daughter', cursive;
 	
+}
+a:link
+{
+	text-decoration: none;
+	color: inherit;
+}
+a:visited
+{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover;
+{
+	text-decoration: underline;
+	color: inherit;
 }
 #title
 {
@@ -121,18 +139,19 @@ h2
 }
 #startpage
 {
-	width: 1000px;
+	width: 1100px;
 	height: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	
 }
 #money
 {
 	float: left;
 	font-size: 25px;
 	position: relative;
-	left: 250px;
+	left: 260px;
 	font-family: 'Architects Daughter', cursive;
 	font-weight: 900;
 	
@@ -142,7 +161,7 @@ h2
 	float:left;
 	font-size: 25px;
 	position: relative;
-	left: 650px;
+	left: 750px;
 	font-family: 'Architects Daughter', cursive;
 	font-weight: 900;
 }
@@ -152,19 +171,16 @@ h2
 	clear: both;
 	float: left;
 	position: relative;
-	top: 0px;
-	left: 50px;
-	float: left;
-	width: 420px;
-	height: 300px;
+	left: 70px;
 }
 #rightbold
 {
+	float: left;
 	position: relative;
-	left: -200px;
-	top: 80px;
-	font-size: 150px;
-	z-index: 1;
+	left: 10px;
+	margin-top: 50px;
+	z-index: 2;
+	font-size: 170px;
 	opacity: 70%;
 	color: white;
 	text-shadow:
@@ -175,20 +191,14 @@ h2
 }
 #foto2
 {
+	float: right;
 	position: relative;
-	top: -145px;
-	left: 120px;
-	float: left;
-	width: 420px;
-	height: 300px;
+	z-index: 0;
+	left: -70px;
 }
 #footer
 {
-	clear: both;
-	position: relative;
-	top: -110px;
 	width: 970px;
-	height: 20px;
 	background-color: #999999;
 	margin-left: auto;
 	margin-right: auto;
@@ -207,6 +217,14 @@ h2
 	-moz-box-shadow: 5px 5px 47px -1px rgba(0,0,0,0.69);
 	box-shadow: 5px 5px 47px -1px rgba(0,0,0,0.69);
 
+}
+.logintitle
+{
+	position: relative;
+	left: 90px;
+	font-size: 25px;
+	text-align: center;
+	color: #BBBBBB;
 }
 input[type=text],
 input[type=address],
@@ -259,6 +277,7 @@ input[type=submit]:hover
 	background-color: #CCCCCC;
 	font-size: 15px;
 	color: blue;
+	text-shadow: none;
 }
 #gotoregister:hover
 {
@@ -280,4 +299,38 @@ input[type=submit]:hover
 .icon-left-big
 {
 	float:left;
+}
+#emptyspace
+{
+	height: 234px;
+}
+#howitworks
+{
+	position: relative;
+	top: 30px;
+	letter-spacing: 1px;
+	font-size: 25px;
+	color: inherit;
+}
+.footerposition
+{
+	display: block;
+	clear: both;
+	height: 100px;
+}
+.icon
+{
+	float: left;
+	width: 120px;
+	font-size: 80px;
+	margin-left: 50px;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.icondescription
+{
+	float: left;
+	margin-top:30px;
+	margin-left:30px;
+	font-size: 50px;
 }
