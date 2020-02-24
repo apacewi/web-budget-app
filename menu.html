@@ -8,13 +8,15 @@
 
 <meta name="description" content="Oto dobrze przemyślana aplikacja pozwalająca precyzyjnie zapanować nad wydatkami i spełniać marzenia!" />
 <meta name ="keywords" content="zostać, bogaty, pieniądze, oszczędzać, majątek" />
+<script src="jquery.js"></script>
+<script src="zmiany.js"></script>
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="css/fontello.css" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Asap+Condensed&display=swap" rel="stylesheet">
 <head/>
 
-<body>
+<body onload="changeslide()">
 
 <div id="container">
 
@@ -24,22 +26,40 @@
 
 <div id ="menu">
 	<div id ="inmainmenu">
-		<div class ="minimenu">Zarządzaj budżetem</div>
-		<div class ="minimenu">Przeglądaj bilans</div>
-		<div class ="minimenu">Ustawienia</div>
-		<div id ="minimenuended">Wyloguj się</div>
+		<ol>
+			<li>Zarządzaj budżetem
+				<ul>
+					<li>Dodaj przychód</li>
+					<li>Doaj wydatek</li>
+				</ul>
+			</li>
+			<li>Przeglądaj bilans
+				<ul>
+					<li>Ostatni miesiąc</li>
+					<li>Ostatnie 3 miesiące</li>
+					<li>Wybrany okres</li>
+				</ul>
+			</li>
+			<li>Ustawienia
+				<ul>
+					<li>Zmień dane</li>
+					<li>Edytuj wpis</li>
+					<li>Usuń wpis</li>
+				</ul>
+			</li>
+			<li><a href="index.html">Wyloguj się</a></li>
+		</ol>
 	</div>
 </div>
-
-<div id ="description">
-	<h2>Co to jest aplikacja budżetowa? </h2>
-	Aplikacja budżetowa umieszczona na niniejszej witrynie ma za zadanie w pełni pomóc Ci zapanować nad własnymi wydatkami a co za tym idzie szybciej i skuteczniej spełniać marzenia! Serwis jest w szczególności przeznaczony osobom pragnącym raz na zawsze uporać się z efektem znikających pieniędzy z portfela. Powodzenia przyszły milionerze!
-</div>
-<div id ="startpage">
-	
+<article>
+<div id="description"><p>
+Witaj w aplikacji budżetowej, to bardzo dobry krok ku efektownemu oszczędzaniu! Pamiętaj, że dokładność i rzetelność w prowadzeniu własnego budżetu daje niesamowite efekty!
+</p></div></article>
+<div id ="slider">
 
 
 </div>
+
 <div id ="footer"> &copy 2020 Wszelkie prawa zastrzeżone.</div>
 
 

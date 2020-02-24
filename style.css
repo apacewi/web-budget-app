@@ -21,6 +21,10 @@ body
 	margin-left: auto;
 	margin-right:auto;
 }
+p
+{
+	text-indent: 5%;
+}
 h2
 {
 	position: relative;
@@ -83,14 +87,14 @@ a:hover;
 #menu
 {
 	width: 1200px;
-	height: 40px;	
+	min-height: 40px;	
 }
 #inmainmenu
 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1000px;
-	height: 42px;
+	min-height: 42px;
 
 }
 .minimenu
@@ -136,6 +140,7 @@ a:hover;
 	font-size: 20px;
 	color: white;
 	padding: 15px;
+	height: 140px;
 }
 #startpage
 {
@@ -144,7 +149,6 @@ a:hover;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	
 }
 #money
 {
@@ -302,12 +306,12 @@ input[type=submit]:hover
 }
 #emptyspace
 {
-	height: 234px;
+	height: 244px;
 }
 #howitworks
 {
 	position: relative;
-	top: 30px;
+	top: 25px;
 	letter-spacing: 1px;
 	font-size: 25px;
 	color: inherit;
@@ -333,4 +337,140 @@ input[type=submit]:hover
 	margin-top:30px;
 	margin-left:30px;
 	font-size: 50px;
+}
+#slider
+{
+	clear: both;
+	height: 550px;
+	border: 1px solid black;
+}
+ol 
+{
+	width: 1000px;
+	margin-top: 0px;
+	padding: 0px;
+	float: left;
+	border-left:2px solid #888888;
+}
+
+ol > li
+{
+	float: left;
+	list-style-type: none;
+	background-color: #666666;
+	text-align: center;
+	color: #EEEDDD;
+	font-size: 20px;
+	border-right: 2px solid #888888;
+	width: 228px;
+	padding: 10px;
+	display:block;
+	height: 28px;;
+}
+ol > li:hover
+{
+	background-color: #333333;
+	cursor: pointer;
+}
+ol > li > ul
+{
+	position: relative;
+	top: 14px;
+	left: -12px;
+	width: 248px;
+	padding: 0;
+	margin: 0;
+	z-index: 2;
+	border-right: 2px solid #888888;
+}
+ol > li > ul:first-child
+{
+	border-left: 2px solid #888888;
+}
+ol > li > ul > li:hover
+{
+	background-color: #333333;
+	cursor: pointer;
+}
+ol > li:hover > ul > li
+{
+	display: block;
+}
+ol > li > ul > li
+{
+	display:none;
+	list-style-type: none;
+	margin-left:0px;
+	background-color: #666666;
+	border-top: 1px solid #888888;
+	text-align: center;
+	color: #EEEDDD;
+	font-size: 20px;
+	padding: 10px;
+}
+#slider
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -50px;
+	margin-bottom: 30px;
+	height: 400px;
+	width: 800px;
+}
+.mess
+{	
+	position: relative;
+	text-align: center;
+	padding: 35px 0px;
+	top: -150px;
+	left: 30px;
+	width: 300px;
+	background-color: black;
+	color: white;
+	text-shadow: none;
+	opacity: 70%;
+	border-radius: 5px;
+}
+.mess2
+{	
+	position: relative;
+	text-align: center;
+	padding: 35px 0px;
+	top: -350px;
+	left: 450px;
+	width: 300px;
+	background-color: black;
+	color: white;
+	opacity: 70%;
+	text-shadow: none;
+	border-radius: 5px;
+}
+.mess3
+{	
+	position: relative;
+	text-align: center;
+	padding: 35px 0px;
+	top: -120px;
+	left: 450px;
+	width: 300px;
+	background-color: black;
+	color: white;
+	text-shadow: none;
+	opacity: 70%;
+	border-radius: 5px;
+}
+.mess4
+{	
+	position: relative;
+	text-align: center;
+	padding: 35px 0px;
+	top: -380px;
+	left: 30px;
+	width: 300px;
+	background-color: black;
+	color: white;
+	text-shadow: none;
+	opacity: 70%;
+	border-radius: 5px;
 }
