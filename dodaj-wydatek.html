@@ -17,18 +17,19 @@
 
 <script type="text/javascript">
 var data = new Date();
-var dzien;
-var miesiac;
+var day;
+var month;
 var rok;
 var zmienna = "aafafa";
-dzien = data.getUTCDate();
+day = data.getUTCDate();
 month = data.getMonth()+1;
 rok = data.getFullYear();
 
 if (month < 10) month = "0"+month;
+if (day < 10) day = "0"+day;
 function showDate()
 {
-document.getElementById("dat").value = rok+"-"+month+"-"+dzien;
+document.getElementById("dat").value = rok+"-"+month+"-"+day;
 }
 
 </script>
@@ -79,7 +80,7 @@ document.getElementById("dat").value = rok+"-"+month+"-"+dzien;
 <form>
 		<div class="formposition">	
 			<div class ="labeltitle"> Wysokość wydatku: </div>
-			<div class ="formsstyle"><input type="number" placeholder="kwota"></div>
+			<div class ="formsstyle"><input type="text" placeholder="kwota"></div>
 			
 			<div class ="labeltitle"> Data(rrrr-mm-dd): </div>
 			<div class ="formsstyle"><input type="text" id="dat" placeholder="rrrr-mm-dd"onfocus="showDate()"></div>
@@ -137,7 +138,7 @@ document.getElementById("dat").value = rok+"-"+month+"-"+dzien;
 			<div class ="formsstyle"><textarea id="textfield" rows = "7" cols= "58" ></textarea></div>
 			
 			<div class="button">
-			<input type="reset" value="Anuluj">
+			<input type="reset" value="Reset">
 			</div>
 		</form>
 
