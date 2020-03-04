@@ -34,3 +34,16 @@ function changeslide()
 	
 	setTimeout("hideslide()",7800);
 }
+
+var points;// = [40, 100, 1, 5, 25, 10];
+//document.getElementById("demo").innerHTML = points;
+
+function sorttable() 
+{
+	
+	
+	
+	
+  points.sort(function(a, b){return b-a});
+  document.getElementById("demo").innerHTML = points;
+}

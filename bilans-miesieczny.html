@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang = "pl">
+<head>
+<meta charset = "utf-8" />
+<meta http-equiv="X-UA-Compatible" content ="IE=edge, chrome=1" />
+
+<title>Bilans miesięczny</title>
+
+<meta name="description" content="Oto dobrze przemyślana aplikacja pozwalająca precyzyjnie zapanować nad wydatkami i spełniać marzenia!" />
+<meta name ="keywords" content="zostać, bogaty, pieniądze, oszczędzać, majątek" />
+<script src="jquery.js"></script>
+<script src="zmiany.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Asap+Condensed&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<head/>
+
+<body onLoad="showDate()">
+
+<div id="container">
+
+<div id ="title">
+	<span class="bigtitle"><h1>Jak skutecznie oszczędzać?</h1></span>
+</div>
+
+<div id ="menu">
+	<div id ="inmainmenu">
+		<ol>
+			<li>Zarządzaj budżetem
+				<ul>
+					<li>Dodaj przychód</li>
+					<li>Doaj wydatek</li>
+				</ul>
+			</li>
+			<li>Przeglądaj bilans
+				<ul>
+					<li>Ostatni miesiąc</li>
+					<li>Ostatnie 3 miesiące</li>
+					<li>Wybrany okres</li>
+				</ul>
+			</li>
+			<li>Ustawienia
+				<ul>
+					<li>Zmień dane</li>
+					<li>Edytuj wpis</li>
+					<li>Usuń wpis</li>
+				</ul>
+			</li>
+			<li><a href="index.html">Wyloguj się</a></li>
+		</ol>
+	</div>
+</div>
+
+<div width=1200px>
+
+	<div class="operationkind">
+	Przychody:
+	</div>
+	<div class="tables">
+	
+		<table class="tablesstyle">
+			
+			<tr>
+			  <td class="tabletitlehead">Kategoria</td>
+			  <td class="tabletitlehead">Suma</td> 
+			</tr> 
+			
+			<tr>
+			  <td class="tabletitle">Wynagrodzenie</td>
+			  <td class="tabletitle">36</td>
+			</tr>
+			
+			<tr>
+			  <td class="tabletitle">Odsetki bankowe</td>
+			  <td class="tabletitle">23</td>
+			</tr>
+			
+			<tr>
+			  <td class="tabletitle">Sprzedaż na allegro</td>
+			  <td class="tabletitle">15</td>
+			</tr>
+			
+			<tr>
+			  <td class="tabletitle">Inne</td>
+			  <td class="tabletitle">96</td>
+		   </tr>
+		   
+		   
+		   
+			<span class="total">Suma Przychodów:</span>
+			<span id="totalsumcorr"><div class="totalsum"></div></span>
+		</table>
+	
+	
+	</div>
+	<div class="operationkind">
+	Wydatki:
+	</div>
+	<div class="tables">
+		<table class="tablesstyle">
+			<tr>
+			  <td class="tabletitle">Jedzenie</td><td class="tabletitle"></td>
+			</tr>
+			<tr>
+			  <td class="tabletitle">Mieszkanie</td><td class="tabletitle"></td>
+			</tr>
+			<tr>
+			  <td class="tabletitle">Transport</td><td class="tabletitle"></td>
+			</tr>
+			<tr>
+			  <td class="tabletitle">Telekomunikacja</td><td class="tabletitle"></td>
+			</tr>
+			<tr>
+			  <td class="tabletitle">Opieka zdrowotna</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Ubrania</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Higiena</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Dzieci</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Rozrywka</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Wycieczka</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Szkolenia</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Książki</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Oszczędności</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Emerytura</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Spłata długów</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Darowizna</td><td class="tabletitle"></td> 
+			</tr>
+			<tr>
+			  <td class="tabletitle">Inne wydatki</td><td class="tabletitle"></td>
+			</tr>
+			<span class="total">Suma Wydatków:</span>
+			<div class="totalsum"></div>
+			<div class="newline"></div>
+			<div class="diag">
+				
+				<div id="piechart"></div>
+				<script type="text/javascript">
+					// Load google charts
+					google.charts.load('current', {'packages':['corechart']});
+					google.charts.setOnLoadCallback(drawChart);
+
+					// Draw the chart and set the chart values
+					function drawChart() {
+					  var data = google.visualization.arrayToDataTable([
+					  ['Task', 'Hours per Day'],
+					  ['Jedzenie', 8],
+					  ['Mieszkanie', 2],
+					  ['Transport', 4],
+					  ['Telekomunikacja', 2],
+					  ['Opieka zdrowotna', 8],
+					  ['Ubrania',10],
+					  ['Higiena',10],
+					  ['Dzieci',10],
+					  ['Rozrywka',10],
+					  ['Wycieczka',10],
+					  ['Szkolenia',10],
+					  ['Książki',10],
+					  ['Oszczędności',10],
+					  ['Emerytura',10],
+					  ['Spłata długów',10],
+					  ['Darowizna',10],
+					  ['Inne wydatki',10]
+					]);
+
+					  // Optional; add a title and set the width and height of the chart
+					  var options = {backgroundColor: 'none','title':'Twoje wydatki: ', 'width':600, 'height':400};
+
+					  // Display the chart inside the <div> element with id="piechart"
+					  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+					  chart.draw(data, options);
+					}
+				</script>
+			</div>
+		</table>
+	
+	</div>
+
+</div>
+<div id ="footer"> &copy 2020 Wszelkie prawa zastrzeżone.</div>
+
+
+</div>
+
+<body/>
